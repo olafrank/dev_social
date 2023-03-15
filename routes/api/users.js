@@ -1,7 +1,7 @@
 import express from "express";
 import { check, validationResult } from "express-validator";
 import gravitar from 'gravatar'
-import User from './models/User.js'
+import User from '../../models/User.js'
 import bcrypt from 'bcryptjs'
 import jwt from "jsonwebtoken";
 import config from 'config'
@@ -14,7 +14,7 @@ const router = express.Router();
 router.post('/',
     [check('name', 'name is required')
         .not()
-        .isEmpty(), check('password', 'enter a valid email')
+        .isEmpty(), check('email', 'enter a valid email')
             .isEmail(), check('password', 'please enter at least 6 or more character')
                 .isLength({ min: 6 })
     ],

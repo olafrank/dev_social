@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://olafrank:goodGOD1968@cluster0.ik9stdf.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret":"mycodingsecrettoken"
+}
